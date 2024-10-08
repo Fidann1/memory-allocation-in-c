@@ -63,7 +63,8 @@ printf("\nWhich operation do you want to do(*please enter the number):\n1.Displa
  scanf("%s",search);
  for(int i=0;i<size;i++){
  	
- 	if(strcasecmp(search,c[i].whole_name)==0){	printf("%s - %d\n",c[i].whole_name ,c[i].number);
+ 	if(strcasecmp(search,c[i].whole_name)==0){	
+		printf("%s - %d\n",c[i].whole_name ,c[i].number);
 	 }
  	
  }
@@ -77,48 +78,9 @@ for(int i=l;i<size-1;i++){
 	c[i]=c[i+1];
 	
 }
-
-
-
 size--;
-
-
-
-}
-
-
-
-}
-
+}}
 free(c);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 	
 
